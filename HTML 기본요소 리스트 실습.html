@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>메뉴판</h1>
+    <ul>
+        <li>커피</li>
+        <li>차</li>
+        <li>우유</li>
+    </ul>
+
+    <h1>안내</h1>
+    <h2>매장을 이용해주시는 고객분들은 아래절차를 따라 주세요</h2>
+    <ol>
+        <li>체온기 앞에서 체온을 잽니다.</li>
+        <li>안심콜로 방문 등록을 합니다.</li>
+        <li>비치된 손소독제로 손을 닦습니다.</li>
+    </ol>
+    <hr>
+    <h1>테이블 표</h1>
+    <table style="border : solid 1px black; border-spacing: 0;">
+    <tr>
+        <th colspan="2"style="border: solid 1px red">제목</th>
+    </tr>
+    <tr>
+        <td style="border: solid 1px red;"
+        rowspan="2">내용이 들어갑니다</td>
+        <td>두번째 내용입니다</td>
+    </tr>
+    <tr>
+        <td>
+            세번째 내용입니다
+        </td>
+    </tr>
+    </table>
+    <p>테이블태그는 tr로 열을 작성하고 td로 안에 셀을 만든다.<br>
+        tr : table row(열), td : table data(셀),
+        <br>th : table header(h1태그처럼 생각하면 된다.)  
+        <br>colspan : 오른쪽에 있는 셀을 확장
+        <br>rowspan : 아래쪽에 있는 셀을 확장
+    </p>
+    <hr>
+    <h1>학생명단입니다</h1>
+    <table style="border: solid 1px;" width="500">
+        <th style="border: solid 1px;" colspan="3">
+            A반
+        </th>
+        <tr>
+            <td style="border: solid 1px;">에밀리</td>
+            <td style="border: solid 1px;">토비</td>
+            <td style="border: solid 1px;">제임스</td>
+        </tr>
+        <tr>
+            <td style="border: solid 1px;">16</td>
+            <td style="border: solid 1px;">14</td>
+            <td style="border: solid 1px;">10</td>
+        </tr>
+    </table>
+    <hr>
+    <table frame="void" width="500">
+        <tr>
+            <th bgcolor="FF9933" style="color: white;">
+                반
+            </th>
+            <th colspan="3", bgcolor="FF9933" style="color: white;">
+                A반(colspan="3")
+            </th>
+        </tr>
+        <tr bgcolor="ffcc99">
+            <td rowspan="2", bgcolor="ffcc99">학생</td>
+            <td>에밀리</td>
+            <td>토비</td>
+            <td>제임스</td>
+        </tr>
+        <tr>
+            <td bgcolor="ffe5cc">16</td>
+            <td bgcolor="ffe5cc">14</td>
+            <td bgcolor="ffe5cc">10</td>
+        </tr>
+    </table>
+</body>
+</html>

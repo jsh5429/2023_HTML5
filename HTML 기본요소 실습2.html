@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>메뉴판</h1>
+    <ul>
+        <li>커피</li>
+        <li>차</li>
+        <li>우유</li>
+    </ul>
+
+    <h1>안내</h1>
+    <h2>매장을 이용해주시는 고객분들은 아래절차를 따라 주세요</h2>
+    <ol>
+        <li>체온기 앞에서 체온을 잽니다.</li>
+        <li>안심콜로 방문 등록을 합니다.</li>
+        <li>비치된 손소독제로 손을 닦습니다.</li>
+    </ol>
+    <!--정의 리스트-->
+    <dl>
+        <!-- dt 정의 제목(title)-->
+        <dt>HTML</dt>
+        <!-- dd 정의 정보(data)-->
+        <dd>하이퍼텍스트 마크업 언어</dd>
+        <dt>링크</dt>
+        <dd>하이퍼링크로 다른 페이지로 이동할 수 있다</dd>
+    </dl>
+    <hr>
+    <h1>학생명단입니다</h1>
+    <table frame="void" width="500">
+        <tr>
+            <th bgcolor="FF9933">
+                반
+            </th>
+            <th colspan="3", bgcolor="FF9933">
+                A반
+            </th>
+        </tr>
+        <tr bgcolor="ffcc99">
+            <td rowspan="2", bgcolor="ffcc99">학생</td>
+            <td>에밀리</td>
+            <td>토비</td>
+            <td>제임스</td>
+        </tr>
+        <tr>
+            <td bgcolor="ffe5cc">16</td>
+            <td bgcolor="ffe5cc">14</td>
+            <td bgcolor="ffe5cc">10</td>
+        </tr>
+    </table>
+    <hr>
+    <a href="#이동">링크로 갑니다</a>
+    <h1><a name="style"></a>style 속성 확인</h1>
+    <p style="color: blue;">색상을 파란색으로 바꿨습니다.</p>
+    <p style="color: rgb(255, 0, 0);">rgb컬러로 색상을 빨간색으로 바꿨습니다.</p>
+    <p style="color: #A3AB78;">16진수로 사용된 컬러 값입니다.</p>
+    <p>스타일이 적용되지않습니다.</p>
+    <p style="background-color: yellow;">배경색을 추가합니다.</p>
+    <p
+    style="color: blue; background-color: yellow;">배경과 글자색상 변경</p>
+    <hr>
+    <h1> <a name="이동">링크</a></h1>
+    <a href="http://www.naver.com">
+        <img src="image.png" width="300">
+    </a>
+    <br>
+    <a href="./HTML 텍스트.html">HTML 텍스트 파일</a>
+    <br>
+    <a href="./backgroundimage.jpg" target="_blank">이미지 새창</a>
+    <br>
+    <a href="./aaa.txt">방문하지 않은 링크</a>
+    <br>
+    <a href="#style">스타일로 이동</a>
+    <p>
+        a태그를 통해서 책갈피를 만들 수 있다.<br>
+        클릭할 링크 : href="#" 속성을 가짐 <br>
+        이동되는 위치의 링크 : name="" 속성을 가짐 <br>
+    </p>
+    <h1>이미지</h1>
+    <!-- 그림을 가져오지 못했을 때 무엇인지 알려주는 게 alt속성-->
+    <img src="./backgroundimage.jpg" alt="그림입니다." width="300">
+    <p>
+        img태그는 파일의 위치를 적어서 불러온다<br>
+        파일의 위치 : ./ (현재 폴더 위치에서 찾기)<br>
+        현재 폴더 위치 : 지금 작성하고 있는 파일이 있는 폴더<br>
+    </p>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML5 멀티미디어</h1>
+    <h2>video</h2>
+    <video src="./video/KakaoTalk_20230213_164409623.mp4"
+    style="width:576px; height: 360px;"autoplay muted></video>
+    <p>
+        controls : 플레이버튼과 남은시간, 소리표시<br>
+        autoplay : 자동실행(단, muted 상태일때) <br>
+        muted : 무음<br>
+        loop : 계속 반복<br>
+    </p>
+    <h2>플러그인</h2>
+    <h3>object</h3>
+    <object data="./data/3일차 HTML5.pdf" type=""></object>
+    <h1>embed</h1>
+    <embed src="./data/3일차 HTML5.pdf" type="">
+    <embed src="./image.png" type="">
+        <p>embed object와 동일하게 사용할 수 있다.</p>
+
+    <h3>유튜브 영상 들고오기</h3>
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/AT4AtNsOaPw?mute=1&autoplay=1" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+    gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+    <p>소스코드로 복사해오면 iframe안에 설정이 되어서
+        들고올 수 있다.
+    </p>
+    <p>
+        video의 설정을 유튜브에서도 적용할 수 있다.
+        url뒤에 ?를 이용한 "쿼리스트링"으로 작성할 수 있다.<br>
+        ?mute=1&autoplay=1 같은 값으로 들어간다.<br>
+
+    </p>
+</body>
+</html>

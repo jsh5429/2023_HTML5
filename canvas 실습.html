@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas2" width="200" height="100"
+    style="border: solid 1px black;">
+    </canvas>
+    <script>
+        let paper2=document.getElementById("canvas2");
+        let context2=paper2.getContext("2d");
+        let grd2=context2.createLinearGradient(50, 0, 150, 0);
+        grd2.addColorStop(0, "blue");
+        grd2.addColorStop(1, "white");
+
+        context2.fillStyle = grd2;
+        context2.fillRect(10, 10, 150, 80);
+
+        context2.fillStyle = "#FFFFFF";
+        context2.font="30px Arial";
+        context2.fillText("CANVAS", 15, 60);
+    </script>
+</body>
+</html>
